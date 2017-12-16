@@ -10,6 +10,9 @@ pip install -r requirements
 python -m spacy download en_core_web_sm
 ```
 
+## example usage
+See examples/ folder for Go and Java sample on how to invoke this micro-service.
+
 ## run/serve
 (see start.sh)
 ```
