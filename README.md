@@ -26,7 +26,7 @@ docker build -t spacy-micro .
 
 run locally on port 80
 ```
-docker run -d -p 80:80 --name spacy-micro spacy-micro
+docker run -d --rm -p 80:80 --name spacy-micro spacy-micro
 ```
 
 post some text to the service using curl
