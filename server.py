@@ -75,7 +75,8 @@ def _parse_text(text):
             text = token.text.strip()
             if len(text) > 0:  # keep the tags we want - add others here
                 token_list.append({'text': text, 'i': token.i, 'tag': token.tag_, 'dep': token.dep_,
-                                   'lemma': token.lemma_, 'pos': token.pos_,
+                                   'lemma': token.lemma_, 'pos': token.pos_, 'lefts': [t.i for t in token.lefts],
+                                   'rights': [t.i for t in token.rights], 'head': token.head.i,
                                    'ent_type': token.ent_type_, 'ancestors': ancestors})
         return token_list
 
